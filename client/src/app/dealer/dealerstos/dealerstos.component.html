@@ -1,0 +1,21 @@
+<br><br><br><br>
+<div class="container-fluid" *ngFor="let sto of stos">
+  <ul>
+  <!-- <h3> {{sto.name}} {{sto.address}} </h3> -->
+  <div class="points" >
+  <li>Sto name : {{sto.name}} </li>
+  <li>Sto address : {{sto.address}} 
+
+  </div> 
+  <br>
+  <!-- <button class="btn btn-outline my-2 my-sm-0"  style="background-color: #336B87">Add worker <i class="fa fa-wrench" aria-hidden="true"></i></button> -->
+  <button class="btn btn-outline my-2 my-sm-0"   style="background-color: #336B87"> View workers <i class="fa fa-line-chart" aria-hidden="true"></i></button>
+  <button class="btn btn-outline my-2 my-sm-0"   style="background-color: #336B87"> View workers <i class="fa fa-line-chart" aria-hidden="true"></i></button>
+
+  <button class="btn btn-outline my-2 my-sm-0" (click)="editsto(sto.stoId)" style="background-color: #336B87">Update <i class="fa fa-history" aria-hidden="true"></i> </button>
+  <button class="btn btn-outline my-2 my-sm-0"  style="background-color: #c5001a">Delete <i class="fa fa-trash-o" aria-hidden="true"></i></button>
+  
+
+</ul>
+  </div>
+  <br><br> 

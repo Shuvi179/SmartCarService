@@ -1,0 +1,32 @@
+<br><br><br><br>
+  <div class="container">
+  <form form="car"  (ngSubmit)="createCar()">
+  <p class="h3 mb-4">Car profile</p>
+  <label><b>Brand</b></label>
+  <input type="text" class="form-control" [(ngModel)]="car.brand" name="brand" >
+  <label><b>Model</b></label>
+  <input type="text" class="form-control" [(ngModel)]="car.model" name="model" >
+  <label><b>Graduation year</b></label>
+  <!-- <select type="text" class="form-control" [(ngModel)]="carProfile.graduationyear" (ngModelChange)="onChange($event)" name="graduation_year" >
+      <option *ngFor="let y of years" [ngValue]="y" > {{y}} </option>
+  </select> -->
+  <input type="text" class="form-control" [(ngModel)]="car.graduation_year" name="number" required>
+
+ <label><b>Number</b></label>
+  <input type="text" class="form-control" [(ngModel)]="car.number" name="number" required>
+
+  <label><b>Price</b></label>
+  <input type="number" class="form-control" [(ngModel)]="car.price" name="number" required>
+
+
+  <label><b>Vin</b></label>
+  <input type="text" class="form-control" [(ngModel)]="car.vin" name="vin" required>
+  <div ng-app="myApp" ng-controller="myCtrl">
+  </div>
+  <br>
+  <div>
+  <button id="create" type="submit"  (click)="createCar()" class="btn my-2 my-sm-0">Create</button>
+  <a id="cancel" href="/home" type="button" class="btn my-2 my-sm-0">Cancel</a>
+  </div>
+  </form>
+  </div>

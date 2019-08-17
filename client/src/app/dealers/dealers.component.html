@@ -1,0 +1,23 @@
+<br><br>
+<br>
+<br>
+<div class="container-fluid" >
+  <div class="card" >
+    <div class="card-body" *ngFor="let dealer of allDealers">
+
+      <div class="points" >
+
+        <ul class="hr">
+          <h3>{{dealer.dealerName}} </h3>
+          <li>dealerAddress: {{dealer.dealerAddress}} </li>
+          <li >dealerEmail : {{dealer.dealerEmail}} </li>
+        </ul>
+
+      </div>
+      <div id="options">
+
+        <button id="create"  class="btn my-2 my-sm-0"  type="button" block="true" style="background-color:#336B87; color: white;margin-left: 40%" mdbWavesEffec mdbBtn (click) = "apply(dealer.dealerEdr)" >Apply to this dealer </button>
+
+      </div>
+    </div>
+  </div></div>

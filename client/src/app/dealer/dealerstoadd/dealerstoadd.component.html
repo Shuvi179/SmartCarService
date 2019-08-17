@@ -1,0 +1,17 @@
+
+<br><br><br><br>
+<div class="container-fluid" *ngFor="let sto of stos">
+  <ul>
+    <div class="points" >
+      <li>Sto name : {{sto.name}} </li>
+      <li>Sto address : {{sto.address}}
+
+    </div>
+    <br>
+    <button class="btn btn-outline my-2 my-sm-0" (click)="add(sto.stoId)" style="background-color: #336B87">Add <i class="fa fa-history" aria-hidden="true"></i> </button>
+    <button class="btn btn-outline my-2 my-sm-0" (click)="deleteApply(sto.stoId)" style="background-color: #336B87">Ignore <i class="fa fa-history" aria-hidden="true"></i> </button>
+
+
+  </ul>
+</div>
+<br><br>

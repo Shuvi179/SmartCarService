@@ -1,0 +1,123 @@
+<br>
+<br>
+<div class="container-fluid" >
+  <div class="card">
+    <div class="card-body">
+      <img src="assets/img/car.png" width="260px" height="130px" style="text-align: right; float:left;">
+
+      <div class="points" >
+        <ul class="hr">
+          <h3>Your car </h3>
+          <li>Brand  : {{mycar.brand}} </li>
+          <li>Model : {{mycar.model}}  </li>
+          <li>Graduation year : {{mycar.graduation_year}} </li>
+          <li>Number : {{mycar.number}} </li>
+          <li>Vin : {{mycar.vin}} </li>
+        </ul>
+
+      </div>
+      <div id="options"></div>
+    </div>
+  </div></div>
+<hr>
+<div class="container-fluid" >
+
+  <div class="card">
+    <div class="card-body">
+      <img src="assets/img/car.png" width="260px" height="130px" style="text-align: right; float:left;">
+
+      <div class="points" >
+        <ul class="hr">
+          <h3>Your car </h3>
+          <li>Brand  : {{mycar.brand}} </li>
+          <li>Model : {{mycar.model}}  </li>
+          <li>Graduation year : {{mycar.graduation_year}} </li>
+          <li>Number : {{mycar.number}} </li>
+          <li>Vin : {{mycar.vin}} </li>
+        </ul>
+
+      </div>
+      <div id="options"></div>
+    </div>
+  </div>
+
+  <div class="card" *ngFor="let dealercar of allCars">
+    <div class="card-body">
+      <img src="assets/img/car.png" width="260px" height="130px" style="text-align: right; float:left;">
+
+      <div class="points" >
+        <ul class="hr">
+          <h3>{{dealercar.brand}} </h3>
+          <li>Model : {{dealercar.model}}  </li>
+          <li>Graduation year : {{mycar.graduation_year}} </li>
+          <li>Number :  {{dealercar.number}} </li>
+          <li>price : {{dealercar.price}} </li>
+        </ul>
+      </div>
+      <div id="options">
+        <button class="btn btn-outline my-2 my-sm-0;" (click)="sendTradeIn(dealercar.vin,mycar.vin)"  style="background-color: #c5001a;margin-left: 30%"> <i class="btn my-2 my-sm-0" aria-hidden="true">TradeIn</i></button>
+
+      </div>
+    </div>
+  </div></div>
+<!--<br><br><br><br>-->
+<!--<div class=" container-fluid">-->
+  <!--<ul>-->
+  <!--<h3>  Your car</h3>-->
+  <!--<div class="points" >-->
+    <!--<li>Brand: {{mycar.brand}}</li>-->
+    <!--<li>Model: {{mycar.model}}</li>-->
+  <!--<li>Graduation year : {{mycar.graduation_year}} </li>-->
+  <!--<li>Number :{{mycar.number}}</li>-->
+  <!--<li>Vin : {{mycar.vin}} </li>-->
+  <!--<li *ngIf="mycar.price" >Price :{{mycar.price}} </li>-->
+  <!--<li *ngIf="mycar.end_guarantee">End of guarantee :{{mycar.end_guarantee}} </li>-->
+  <!--</div> -->
+  <!--<br>-->
+  <!--&lt;!&ndash; <button class="btn btn-outline my-2 my-sm-0" (click) = "applyToSTO(car.id)" style="background-color: #336B87">Apply to STO <i class="fa fa-wrench" aria-hidden="true"></i></button> &ndash;&gt;-->
+  <!--&lt;!&ndash; <button class="btn btn-outline my-2 my-sm-0" (click) = "applyToTradeIn()" style="background-color: #336B87">Apply for Trade in <i class="fa fa-refresh" aria-hidden="true"></i></button> &ndash;&gt;-->
+  <!--&lt;!&ndash; <button class="btn btn-outline my-2 my-sm-0" (click) = "goToCharts(car)" style="background-color: #336B87"> View charts <i class="fa fa-line-chart" aria-hidden="true"></i></button>-->
+  <!--<button class="btn btn-outline my-2 my-sm-0" (click) = "history(user.id)" style="background-color: #336B87">Service history <i class="fa fa-history" aria-hidden="true"></i> </button>-->
+  <!--<button class="btn btn-outline my-2 my-sm-0" (click) = "deleteCarById(car.id)" style="background-color: #c5001a">Delete <i class="fa fa-trash-o" aria-hidden="true"></i></button>-->
+   <!--&ndash;&gt;-->
+<!--</ul>-->
+  <!--</div>-->
+  <!--<br><br> -->
+<!--<div class="container-fluid" *ngFor="let dealer of dealers">-->
+
+<!--<ul>-->
+<!--<div class="points" >-->
+<!--<li>{{dealer.dealerName}}</li>-->
+<!--<li>{{dealer.dealerAddress}}</li>-->
+<!--<li>{{dealer.dealerEdr}}</li>-->
+<!--<li>{{dealer.dealerEmail}}</li>-->
+
+
+<!--</div>-->
+
+
+
+<!--</ul>-->
+
+
+
+<!--</div>-->
+
+
+<!--<div class="container-fluid" *ngFor="let allcar of allCars">-->
+
+    <!--<div class="points">-->
+  <!---->
+      <!--<li>{{allcar.id}}</li>-->
+      <!--<li>{{allcar.brand}}</li>-->
+      <!--<li>{{allcar.model}}</li>-->
+      <!--<li>{{allcar.number}}</li>-->
+      <!--<li>{{allcar.vin}}</li>-->
+  <!---->
+    <!--</div>-->
+  <!---->
+  <!--</div>-->
+
+
+
+

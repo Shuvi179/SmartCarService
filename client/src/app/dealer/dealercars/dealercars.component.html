@@ -1,0 +1,50 @@
+<!--<br><br><br><br>-->
+<!--<div class="container-fluid" *ngFor="let car of cars">-->
+  <!--<ul>-->
+  <!--<h3> {{car.brand}} {{car.model}} </h3>-->
+  <!--<div class="points" >-->
+  <!--<li>Graduation year : {{car.graduation_year}} </li>-->
+  <!--<li>Number : {{car.number}} </li>-->
+  <!--<li>Vin : {{car.vin}} </li>-->
+  <!--<li >Price : {{car.price}} </li>-->
+  <!--<li >End of guarantee : {{car.end_guarantee}} </li>-->
+  <!--</div>-->
+  <!--<br>-->
+  <!--&lt;!&ndash; <button class="btn btn-outline my-2 my-sm-0" (click) = "applyToSTO(car.id)" style="background-color: #336B87">Apply to STO <i class="fa fa-wrench" aria-hidden="true"></i></button> &ndash;&gt;-->
+  <!--&lt;!&ndash; <button class="btn btn-outline my-2 my-sm-0" (click) = "applyToTradeIn()" style="background-color: #336B87">Apply for Trade in <i class="fa fa-refresh" aria-hidden="true"></i></button> &ndash;&gt;-->
+ <!--<button class="btn btn-outline my-2 my-sm-0" (click) = "deleteCarById(car.id)" style="background-color: #c5001a">Delete <i class="fa fa-trash-o" aria-hidden="true"></i></button>-->
+  <!--</ul>-->
+  <!--</div>-->
+  <!--<br><br>-->
+<br><br>
+<br>
+<br>
+<div class="container-fluid" >
+  <div class="card" >
+    <div class="card-body" *ngFor="let car of cars">
+      <img src="assets/img/car.png" width="260px" height="130px" style="text-align: right; float:left;display: inline-block">
+
+      <div class="points" >
+        <ul class="hr">
+          <h3>{{car.brand}} - {{car.model}} </h3>
+          <li>Graduation year : {{car.graduation_year}} </li>
+          <li>Number : {{car.number}} </li>
+          <li>Vin : {{car.vin}} </li>
+          <li >Price : {{car.price}} </li>
+          <li >End of guarantee : {{car.end_guarantee}} </li>
+        </ul>
+
+      </div>
+      <div id="options">
+
+        <button class="btn btn-outline my-2 my-sm-0" (click) = "deleteCarById(car.id)" style="background-color: #c5001a;margin-left: 30%">Delete <i class="fa fa-trash-o" aria-hidden="true"></i></button>
+
+      </div>
+    </div>
+  </div></div>
+
+
+
+
+
+
